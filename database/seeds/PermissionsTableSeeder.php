@@ -9,7 +9,7 @@ class PermissionsTableSeeder extends Seeder
     {
     	// USUARIOS
         Permission::create([
-        	'name'			=>	'Navegar usuarios',
+        	'name'			=>	'Ver todos los usuarios',
         	'slug'			=>	'users.index',
         	'description'	=>	'Ver todos los usuarios',
         ]);
@@ -21,20 +21,20 @@ class PermissionsTableSeeder extends Seeder
         ]);
 
         Permission::create([
-        	'name'			=>	'Editar usuarios',
+        	'name'			=>	'Editar un usuario',
         	'slug'			=>	'users.edit',
         	'description'	=>	'Ver y editar un usuario',
         ]);
 
         Permission::create([
-        	'name'			=>	'Eliminar usuarios',
+        	'name'			=>	'Eliminar un usuario',
         	'slug'			=>	'users.destroy',
         	'description'	=>	'Eliminar usuarios',
         ]);
 
         // ROLES
         Permission::create([
-        	'name'			=>	'Navegar roles',
+        	'name'			=>	'Ver todos los roles',
         	'slug'			=>	'roles.index',
         	'description'	=>	'Ver todos los roles',
         ]);
@@ -46,26 +46,26 @@ class PermissionsTableSeeder extends Seeder
         ]);
 
         Permission::create([
-        	'name'			=>	'Editar roles',
+        	'name'			=>	'Editar un rol',
         	'slug'			=>	'roles.edit',
         	'description'	=>	'Ver y editar un rol',
         ]);
 
         Permission::create([
-        	'name'			=>	'Crear roles',
+        	'name'			=>	'Crear un rol',
         	'slug'			=>	'roles.create',
         	'description'	=>	'Crear un rol',
         ]);
 
         Permission::create([
-        	'name'			=>	'Eliminar roles',
+        	'name'			=>	'Eliminar un rol',
         	'slug'			=>	'roles.destroy',
         	'description'	=>	'Eliminar roles',
         ]);
 
         // PRODUCTOS
         Permission::create([
-        	'name'			=>	'Navegar productos',
+        	'name'			=>	'Ver todos los productos',
         	'slug'			=>	'products.index',
         	'description'	=>	'Ver todos los productos',
         ]);
@@ -77,19 +77,19 @@ class PermissionsTableSeeder extends Seeder
         ]);
 
         Permission::create([
-        	'name'			=>	'Editar productos',
+        	'name'			=>	'Editar un producto',
         	'slug'			=>	'products.edit',
         	'description'	=>	'Ver y editar un producto',
         ]);
 
         Permission::create([
-        	'name'			=>	'Editar productos',
+        	'name'			=>	'Crear un producto',
         	'slug'			=>	'products.create',
         	'description'	=>	'Ver y editar un producto',
         ]);
 
         Permission::create([
-        	'name'			=>	'Eliminar productos',
+        	'name'			=>	'Eliminar un producto',
         	'slug'			=>	'products.destroy',
         	'description'	=>	'Eliminar productos',
         ]);
