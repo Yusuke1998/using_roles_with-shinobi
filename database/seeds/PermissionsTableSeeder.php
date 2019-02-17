@@ -52,9 +52,9 @@ class PermissionsTableSeeder extends Seeder
         ]);
 
         Permission::create([
-        	'name'			=>	'Editar roles',
+        	'name'			=>	'Crear roles',
         	'slug'			=>	'roles.create',
-        	'description'	=>	'Ver y editar un rol',
+        	'description'	=>	'Crear un rol',
         ]);
 
         Permission::create([
