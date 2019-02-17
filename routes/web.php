@@ -40,20 +40,20 @@ Route::middleware('auth')->group(function(){
 	Route::post('productos/store','ProductController@store')->name('products.store')->middleware('permission:products.create');
 	Route::get('productos/create','ProductController@create')->name('products.create')->middleware('permission:products.create');
 
-	Route::get('productos/{role}/edit','ProductController@edit')->name('products.edit')->middleware('permission:products.edit');
-	Route::put('productos/{role}','ProductController@update')->name('products.update')->middleware('permission:products.edit');
+	Route::get('productos/{product}/edit','ProductController@edit')->name('products.edit')->middleware('permission:products.edit');
+	Route::put('productos/{product}','ProductController@update')->name('products.update')->middleware('permission:products.edit');
 
-	Route::get('productos/{role}','ProductController@show')->name('products.show')->middleware('permission:products.show');
+	Route::get('productos/{product}','ProductController@show')->name('products.show')->middleware('permission:products.show');
 	
-	Route::delete('productos/{role}','ProductController@destroy')->name('products.destroy')->middleware('permission:products.destroy');
+	Route::post('productos/{product}','ProductController@destroy')->name('products.destroy')->middleware('permission:products.destroy');
 
 	// Usuarios
 	Route::get('usuarios/index','UserController@index')->name('users.index')->middleware('permission:users.index');
 
-	Route::get('usuarios/{role}/edit','UserController@edit')->name('users.edit')->middleware('permission:users.edit');
-	Route::put('usuarios/{role}','UserController@update')->name('users.update')->middleware('permission:users.edit');
+	Route::get('usuarios/{user}/edit','UserController@edit')->name('users.edit')->middleware('permission:users.edit');
+	Route::put('usuarios/{user}','UserController@update')->name('users.update')->middleware('permission:users.edit');
 
-	Route::get('usuarios/{role}','UserController@show')->name('users.show')->middleware('permission:users.show');
+	Route::get('usuarios/{user}','UserController@show')->name('users.show')->middleware('permission:users.show');
 	
-	Route::delete('usuarios/{role}','UserController@destroy')->name('users.destroy')->middleware('permission:users.destroy');
+	Route::delete('usuarios/{user}','UserController@destroy')->name('users.destroy')->middleware('permission:users.destroy');
 });
